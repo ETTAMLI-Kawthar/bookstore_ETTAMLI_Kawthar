@@ -1,0 +1,28 @@
+<div class="position-absolute top-50 start-50 translate-middle">
+  <h3 class="text-center">Book Information </h3>
+  <br/>
+  <form (ngSubmit)="onSubmit()">
+    <dl class="row border border-info rounded-3 border-4">
+      <dt class="col-sm-3">ISBN: </dt>
+      <dd class="col-sm-9">{{book.isbn }}</dd>
+
+      <dt class="col-sm-3"> Name: </dt>
+      <dd class="col-sm-9">{{book.name }}</dd>
+
+      <dt class="col-sm-3"> Author: </dt>
+      <dd class="col-sm-9">{{book.author  }}</dd>
+
+      <dt class="col-sm-3"> Category: </dt>
+      <dd class="col-sm-9">{{book.category  }}</dd>
+
+      <dt class="col-sm-3">Description: </dt>
+      <dd class="col-sm-9">{{book.description}}</dd>
+
+      <div class="position-absolute top-100 start-50 translate-middle btn" style="width: 2rem; height:2rem;">
+        <button class="btn btn-success" type="submit">Back</button>
+      </div>
+    </dl>
+  </form>
+
+</div>
+
